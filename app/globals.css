@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a192f;
+  --color-accent: #d4af37;
+  --color-champagne: #e8d8b0;
+  --color-background: #fafafa;
+  --color-text: #1e293b;
+}
+
+@theme inline {
+  --font-serif: var(--font-playfair-display), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --navbar-height: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keeps anchor targets clear of the fixed navbar. */
+  scroll-padding-top: calc(
+    var(--navbar-height) + env(safe-area-inset-top, 0px) + 0.75rem
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair-display), Georgia, "Times New Roman", serif;
+}
+
+.ambient-mesh {
+  position: absolute;
+  inset: -30%;
+  background:
+    radial-gradient(
+      ellipse at 18% 12%,
+      rgba(212, 175, 55, 0.28),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 88% 18%,
+      rgba(232, 216, 176, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 78% 86%,
+      rgba(232, 216, 176, 0.16),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 8% 84%,
+      rgba(212, 175, 55, 0.14),
+      transparent 38%
+    );
+  animation: ambient-mesh 42s ease-in-out infinite;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  will-change: transform;
+}
+
+.ambient-orb-gold {
+  top: -16rem;
+  left: -12rem;
+  width: 34rem;
+  height: 34rem;
+  background: rgba(212, 175, 55, 0.34);
+  animation: ambient-drift-a 24s ease-in-out infinite;
+}
+
+.ambient-orb-champagne {
+  top: 8%;
+  right: -14rem;
+  width: 30rem;
+  height: 30rem;
+  background: rgba(232, 216, 176, 0.26);
+  animation: ambient-drift-b 28s ease-in-out infinite;
+}
+
+.ambient-orb-warm {
+  bottom: -14rem;
+  left: 36%;
+  width: 28rem;
+  height: 28rem;
+  background: rgba(212, 175, 55, 0.2);
+  animation: ambient-drift-c 32s ease-in-out infinite;
+}
+
+@keyframes ambient-mesh {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(3%, -2%, 0) rotate(7deg) scale(1.08);
+  }
+}
+
+@keyframes ambient-drift-a {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(9vw, 8vh, 0) scale(1.1);
+  }
+}
+
+@keyframes ambient-drift-b {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-8vw, 10vh, 0) scale(1.14);
+  }
+}
+
+@keyframes ambient-drift-c {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(6vw, -9vh, 0) scale(1.08);
+  }
+}
+
+@media (max-width: 640px) {
+  .ambient-orb {
+    filter: blur(64px);
+  }
+
+  .ambient-orb-gold,
+  .ambient-orb-champagne,
+  .ambient-orb-warm {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-mesh,
+  .ambient-orb {
+    animation: none;
+  }
+}
