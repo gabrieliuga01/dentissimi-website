@@ -85,7 +85,7 @@ export default function AboutSection() {
               <div className="relative overflow-hidden rounded-[1.35rem] bg-[#2c2824] shadow-[0_28px_70px_rgba(10,25,47,0.14)]">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
-                    src="/images/dr-roxana-portrait.jpg"
+                    src="/images/dr-roxana-new-image.jpg"
                     alt="Dr. Roxana Conduraru, fondatoarea clinicii Dentissimi"
                     fill
                     sizes="(min-width: 1024px) 460px, (min-width: 640px) 28rem, 92vw"
@@ -102,7 +102,7 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <figcaption className="mx-auto mt-6 flex max-w-md items-end justify-between gap-4 border-t border-primary/12 pt-4 lg:mx-0 lg:max-w-none">
+            <figcaption className="mx-auto mt-6 flex max-w-md items-center justify-between gap-4 border-t border-primary/12 pt-4 lg:mx-0 lg:max-w-none">
               <div>
                 <p className="font-serif text-xl leading-none text-primary">
                   Dr. Roxana Conduraru
@@ -111,10 +111,14 @@ export default function AboutSection() {
                   Fondatoare
                 </p>
               </div>
-              <p className="text-right text-[0.68rem] tracking-[0.22em] text-primary/70 uppercase">
-                Clinica
-                <span className="mt-1 block">Dentissimi</span>
-              </p>
+              <Image
+                src="/images/logo.png"
+                alt="Dentissimi Dental Clinic"
+                width={751}
+                height={544}
+                sizes="160px"
+                className="h-16 w-auto shrink-0 sm:h-20"
+              />
             </figcaption>
           </motion.figure>
 

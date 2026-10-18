@@ -157,16 +157,16 @@ export default function Footer() {
           <div className="order-1 min-w-0 lg:order-none lg:col-span-5">
             <a
               href={withBasePath("/#acasa")}
-              aria-label="Dentissimi"
+              aria-label="Dentissimi Dental Clinic"
               className="inline-flex max-w-full rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
             >
               <Image
-                src="/logo.png"
-                alt="Dentissimi"
-                width={1024}
-                height={166}
-                sizes="280px"
-                className="h-10 w-auto max-w-full sm:h-12"
+                src="/images/logo.png"
+                alt=""
+                width={751}
+                height={544}
+                sizes="200px"
+                className="h-28 w-auto max-w-full sm:h-32"
               />
             </a>
             <span

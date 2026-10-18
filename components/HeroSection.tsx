@@ -64,7 +64,7 @@ export default function HeroSection() {
         <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/45 to-transparent" />
       </div>
 
-      <div className="relative mx-auto grid min-h-svh w-full max-w-7xl content-center gap-14 px-5 pt-[max(7.5rem,calc(env(safe-area-inset-top)+6rem))] pb-16 sm:px-8 lg:grid-cols-12 lg:items-center lg:gap-8 lg:px-12 lg:pb-20 xl:gap-14">
+      <div className="relative mx-auto grid min-h-svh w-full max-w-7xl content-center gap-14 px-5 pt-[calc(var(--navbar-height)+env(safe-area-inset-top,0px)+1.75rem)] pb-16 sm:px-8 lg:grid-cols-12 lg:items-center lg:gap-8 lg:px-12 lg:pb-20 xl:gap-14">
         <motion.div
           variants={container}
           initial="hidden"
@@ -214,9 +214,14 @@ export default function HeroSection() {
               Excelență în
               <span className="block">fiecare zâmbet</span>
             </p>
-            <p className="mt-3 text-[0.65rem] tracking-[0.28em] text-white/70 uppercase">
-              Dentissimi Dental Clinic
-            </p>
+            <Image
+              src="/images/logo.png"
+              alt="Dentissimi Dental Clinic"
+              width={751}
+              height={544}
+              sizes="148px"
+              className="mt-4 h-[4.25rem] w-auto"
+            />
           </figcaption>
         </motion.figure>
       </div>

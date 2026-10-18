@@ -16,35 +16,35 @@ const testimonials: Testimonial[] = [
     city: "Bârlad",
     treatment: "Fațete ceramice",
     quote:
-      "Am venit cu o teamă veche de dentist și am plecat zâmbind. Dr. Roxana m-a ascultat, a explicat fiecare pas, iar fațetele arată atât de natural încât prietenii întreabă doar de ce par mai odihnită.",
+      "Îmi era frică de dentist de mică și tot amânam. Dr. Roxana m-a ascultat, mi-a spus ce e de făcut și cât costă înainte să începem. Fațetele arată natural: lumea observă că zâmbesc mai des, nu că mi-am „făcut dinții”.",
   },
   {
     name: "Andrei Popa",
     city: "Vaslui",
     treatment: "Implantologie",
     quote:
-      "După ani cu un dinte lipsă, evitam orice poză. Implantul a fost planificat fără grabă, fără durere, și am uitat că a lipsit ceva. Mănânc din nou fără să mă gândesc la el.",
+      "Îmi lipsea un dinte de câțiva ani și mestecam doar pe o parte. Implantul s-a făcut în mai multe vizite, totul stabilit dinainte. N-a fost dureros cum mă temeam, iar acum mănânc normal. Merită drumul din Vaslui.",
   },
   {
-    name: "Ioana Stanciu",
+    name: "Raluca Grigore",
     city: "Bârlad",
-    treatment: "Albire profesională",
+    treatment: "Pedodonție",
     quote:
-      "Voiam un alb curat, nu artificial. Rezultatul e exact ce am cerut: luminos, elegant, potrivit tenului meu. O vizită în clinică, un zâmbet pe care îl port cu recunoștință.",
+      "Am venit cu băiețelul de 6 ani, care plângea doar când auzea de dentist. I-au arătat cabinetul și au vorbit cu el pe limba lui. A stat la consultație fără să se sperie. De atunci vine mai liniștit, și asta contează cel mai mult pentru noi.",
   },
   {
     name: "Mihai Vasilescu",
     city: "Tecuci",
     treatment: "Tratament endodontic",
     quote:
-      "Credeam că dintele e pierdut. Tratamentul de canal, făcut sub magnificație, l-a salvat. Nicio durere, nicio grabă. Atât de rar găsești răbdarea asta.",
+      "Mă durea un dinte de câteva săptămâni și credeam că trebuie scos. Mi-au făcut tratament de canal și l-au păstrat. A durat mai mult decât o plombă, dar au lucrat cu răbdare și m-au sunat a doua zi să vadă cum mă simt.",
   },
   {
     name: "Carmen Ionescu",
     city: "Bârlad",
     treatment: "Profilaxie",
     quote:
-      "Vin de doi ani la detartraj și de fiecare dată plec cu aceeași liniște. E curat, e calm, și nimeni nu te face să te simți judecat pentru că ai amânat.",
+      "Vin de vreo doi ani la detartraj. Se respectă ora, cabinetul e curat și nu te judecă dacă ai lipsit o perioadă. Îmi explică ce văd și ce ar fi bine de făcut mai departe, pe înțelesul meu.",
   },
 ];
 

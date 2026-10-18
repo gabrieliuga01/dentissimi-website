@@ -202,17 +202,17 @@ export default function Navbar() {
               event.preventDefault();
               goToSection("/#acasa");
             }}
-            aria-label="Dentissimi"
+            aria-label="Dentissimi Dental Clinic"
             className="relative inline-flex shrink-0 items-center rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
           >
             <Image
-              src="/logo.png"
-              alt="Dentissimi"
-              width={1024}
-              height={166}
+              src="/images/logo.png"
+              alt=""
+              width={751}
+              height={544}
               priority
-              sizes="240px"
-              className="h-8 w-auto sm:h-9 lg:h-10"
+              sizes="128px"
+              className="h-16 w-auto sm:h-20"
             />
           </a>
 

@@ -57,7 +57,12 @@ const dentistJsonLd = {
     addressRegion: clinic.region,
     addressCountry: clinic.country,
   },
-  ...(siteUrl ? { url: pageUrl("/", siteUrl) } : {}),
+  ...(siteUrl
+    ? {
+        url: pageUrl("/", siteUrl),
+        logo: pageUrl("/images/logo.png", siteUrl),
+      }
+    : {}),
 };
 
 export const viewport: Viewport = {

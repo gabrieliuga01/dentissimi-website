@@ -46,7 +46,7 @@ export default function ConfidentialitatePage() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_18%_0%,rgba(232,216,176,0.08),transparent_46%)]" />
         </div>
 
-        <div className="relative mx-auto max-w-3xl px-5 pt-[max(7.5rem,calc(env(safe-area-inset-top)+6rem))] pb-16 sm:px-8 sm:pb-20">
+        <div className="relative mx-auto max-w-3xl px-5 pt-[calc(var(--navbar-height)+env(safe-area-inset-top,0px)+2.5rem)] pb-16 sm:px-8 sm:pb-20">
           <p className="flex items-center gap-4 text-[0.68rem] font-medium tracking-[0.32em] text-accent uppercase sm:text-xs">
             <span aria-hidden="true" className="h-px w-10 bg-accent/80" />
             {clinic.name}
